@@ -7,7 +7,7 @@ import ProcessSection from '@/components/ProcessSection';
 import TrustSection from '@/components/TrustSection';
 import TestimonialsSection from '@/components/TestimonialsSection';
 import QuizCTA from '@/components/QuizCTA';
-import { generateSEOMetadata } from '@/lib/seo';
+import { generateSEO } from '@/lib/metadata';
 
 interface Props {
   params: Promise<{ locale: string }>;
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'seo' });
   
-  return generateSEOMetadata({
+  return generateSEO({
     title: t('home.title'),
     description: t('home.description'),
     locale,
