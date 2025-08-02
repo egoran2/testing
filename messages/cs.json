@@ -1,0 +1,110 @@
+{
+  "navigation": {
+    "home": "Domů",
+    "services": "Služby",
+    "articles": "Články",
+    "partners": "Partneři",
+    "contact": "Kontakt",
+    "getStarted": "Začít"
+  },
+  "hero": {
+    "headline": "Vaše cesta k rezidenci v EU začína zde",
+    "subheadline": "Odborné vedení pro rusky mluvící IT profesionály hledající evropská povolení k pobytu. Rychle, spolehlivě a v souladu se zákonem.",
+    "cta": "Začít cestu",
+    "ctaSecondary": "Bezplatná konzultace",
+    "trustBadge": "Důvěřuje nám 500+ IT profesionálů"
+  },
+  "benefits": {
+    "title": "Proč si vybrat naše služby?",
+    "speed": {
+      "title": "Rychlé zpracování",
+      "description": "Průměrná doba zpracování 3-6 měsíců vs 12+ měsíců samostatně"
+    },
+    "expertise": {
+      "title": "Právní expertiza",
+      "description": "Certifikovaní imigrační právníci s 10+ lety zkušeností"
+    },
+    "support": {
+      "title": "Plná podpora",
+      "description": "Osobní manažer po celou dobu procesu"
+    },
+    "success": {
+      "title": "Vysoká úspěšnost",
+      "description": "98% schválení pro naše klienty"
+    }
+  },
+  "process": {
+    "title": "Jednoduchý 4-krokový proces",
+    "step1": {
+      "title": "Bezplatná konzultace",
+      "description": "Posoudíme vaši způsobilost a vytvoříme personalizovaný plán"
+    },
+    "step2": {
+      "title": "Příprava dokumentů",
+      "description": "Postaráme se o všechny dokumenty a právní požadavky"
+    },
+    "step3": {
+      "title": "Podání žádosti",
+      "description": "Podáme vaši žádost s plnou právní podporou"
+    },
+    "step4": {
+      "title": "Rezidence schválena",
+      "description": "Získejte své povolení k pobytu v EU a začněte nový život"
+    }
+  },
+  "quiz": {
+    "title": "Zkontrolujte svou způsobilost",
+    "subtitle": "Absolvujte náš 2minutový kvíz a zjistěte, zda kvalifikujete",
+    "startQuiz": "Začít kvíz",
+    "question1": "Jaká je vaše současná profese?",
+    "question2": "Máte vysokoškolské vzdělání?",
+    "question3": "Kolik let zkušeností v IT máte?",
+    "question4": "Jaký je váš současný měsíční příjem?",
+    "getResults": "Získat výsledky"
+  },
+  "testimonials": {
+    "title": "Příběhy úspěchu",
+    "subtitle": "Skuteční lidé, skutečné výsledky"
+  },
+  "partners": {
+    "title": "Partnerský program",
+    "subtitle": "Připojte se k naší síti a vydělávejte pomocí ostatním",
+    "whiteLabel": {
+      "title": "White Label řešení",
+      "description": "Kompletní značkové řešení pro váš byznys",
+      "features": [
+        "Váš branding a doména",
+        "Vlastní cenová struktura",
+        "Plná technická podpora",
+        "Marketingové materiály zahrnuty"
+      ]
+    },
+    "referral": {
+      "title": "Referenční program",
+      "description": "Vydělávejte provizi za každé úspěšné doporučení",
+      "features": [
+        "Až 30% provize",
+        "Sledování v reálném čase",
+        "Měsíční výplaty",
+        "Marketingová podpora"
+      ]
+    }
+  },
+  "footer": {
+    "company": "EU Residency Pro",
+    "description": "Váš důvěryhodný partner pro povolení k pobytu v EU",
+    "legal": "Právní informace",
+    "privacy": "Zásady ochrany osobních údajů",
+    "terms": "Podmínky služby",
+    "contact": "Kontaktujte nás"
+  },
+  "common": {
+    "learnMore": "Zjistit více",
+    "getStarted": "Začít",
+    "contactUs": "Kontaktujte nás",
+    "readMore": "Číst více",
+    "loading": "Načítání...",
+    "submit": "Odeslat",
+    "close": "Zavřít"
+  }
+}

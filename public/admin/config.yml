@@ -1,0 +1,94 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Category", name: "category", widget: "select", options: ["Czech Republic", "Visa Types", "Taxes", "Lifestyle", "Documentation", "Success Stories"]}
+      - {label: "Read Time", name: "readTime", widget: "string", default: "5 min read"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured", name: "featured", widget: "boolean", default: false}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Translations"
+        name: "translations"
+        widget: "object"
+        fields:
+          - {label: "Russian Title", name: "ru_title", widget: "string", required: false}
+          - {label: "Russian Excerpt", name: "ru_excerpt", widget: "text", required: false}
+          - {label: "Russian Body", name: "ru_body", widget: "markdown", required: false}
+          - {label: "Czech Title", name: "cs_title", widget: "string", required: false}
+          - {label: "Czech Excerpt", name: "cs_excerpt", widget: "text", required: false}
+          - {label: "Czech Body", name: "cs_body", widget: "markdown", required: false}
+
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Role", name: "role", widget: "string"}
+      - {label: "Company", name: "company", widget: "string"}
+      - {label: "Photo", name: "image", widget: "image"}
+      - {label: "Rating", name: "rating", widget: "number", min: 1, max: 5, default: 5}
+      - {label: "Testimonial", name: "text", widget: "text"}
+      - {label: "Location", name: "location", widget: "string"}
+      - label: "Translations"
+        name: "translations"
+        widget: "object"
+        fields:
+          - {label: "Russian Text", name: "ru_text", widget: "text", required: false}
+          - {label: "Czech Text", name: "cs_text", widget: "text", required: false}
+
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - label: "General Settings"
+        name: "general"
+        file: "content/settings/general.yml"
+        fields:
+          - {label: "Site Title", name: "title", widget: "string"}
+          - {label: "Site Description", name: "description", widget: "text"}
+          - {label: "Contact Email", name: "email", widget: "string"}
+          - {label: "Contact Phone", name: "phone", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+          - {label: "Social Media", name: "social", widget: "object", fields: [
+              {label: "Facebook", name: "facebook", widget: "string", required: false},
+              {label: "Twitter", name: "twitter", widget: "string", required: false},
+              {label: "LinkedIn", name: "linkedin", widget: "string", required: false}
+            ]}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/pages/home.yml"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - {label: "Headline", name: "headline", widget: "string"}
+              - {label: "Subheadline", name: "subheadline", widget: "text"}
+              - {label: "CTA Button", name: "cta", widget: "string"}
+              - {label: "Secondary CTA", name: "ctaSecondary", widget: "string"}
+              - {label: "Hero Image", name: "image", widget: "image"}
+          - label: "Benefits Section"
+            name: "benefits"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Description", name: "description", widget: "text"}
+              - {label: "Icon", name: "icon", widget: "string"}

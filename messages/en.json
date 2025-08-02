@@ -1,0 +1,110 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "articles": "Articles",
+    "partners": "Partners",
+    "contact": "Contact",
+    "getStarted": "Get Started"
+  },
+  "hero": {
+    "headline": "Your Path to EU Residency Starts Here",
+    "subheadline": "Expert guidance for Russian-speaking IT professionals seeking European residency permits. Fast, reliable, and legally compliant.",
+    "cta": "Start Your Journey",
+    "ctaSecondary": "Free Consultation",
+    "trustBadge": "Trusted by 500+ IT professionals"
+  },
+  "benefits": {
+    "title": "Why Choose Our Service?",
+    "speed": {
+      "title": "Fast Processing",
+      "description": "Average processing time of 3-6 months vs 12+ months DIY"
+    },
+    "expertise": {
+      "title": "Legal Expertise",
+      "description": "Certified immigration lawyers with 10+ years experience"
+    },
+    "support": {
+      "title": "Full Support",
+      "description": "Personal manager throughout the entire process"
+    },
+    "success": {
+      "title": "High Success Rate",
+      "description": "98% approval rate for our clients"
+    }
+  },
+  "process": {
+    "title": "Simple 4-Step Process",
+    "step1": {
+      "title": "Free Consultation",
+      "description": "Assess your eligibility and create a personalized plan"
+    },
+    "step2": {
+      "title": "Document Preparation",
+      "description": "We handle all paperwork and legal requirements"
+    },
+    "step3": {
+      "title": "Application Submission",
+      "description": "Submit your application with full legal support"
+    },
+    "step4": {
+      "title": "Residency Approved",
+      "description": "Receive your EU residency permit and start your new life"
+    }
+  },
+  "quiz": {
+    "title": "Check Your Eligibility",
+    "subtitle": "Take our 2-minute quiz to see if you qualify",
+    "startQuiz": "Start Quiz",
+    "question1": "What is your current profession?",
+    "question2": "Do you have a university degree?",
+    "question3": "How many years of IT experience do you have?",
+    "question4": "What is your current monthly income?",
+    "getResults": "Get My Results"
+  },
+  "testimonials": {
+    "title": "Success Stories",
+    "subtitle": "Real people, real results"
+  },
+  "partners": {
+    "title": "Partner Program",
+    "subtitle": "Join our network and earn while helping others",
+    "whiteLabel": {
+      "title": "White Label Solution",
+      "description": "Complete branded solution for your business",
+      "features": [
+        "Your branding and domain",
+        "Custom pricing structure",
+        "Full technical support",
+        "Marketing materials included"
+      ]
+    },
+    "referral": {
+      "title": "Referral Program",
+      "description": "Earn commission for every successful referral",
+      "features": [
+        "Up to 30% commission",
+        "Real-time tracking",
+        "Monthly payouts",
+        "Marketing support"
+      ]
+    }
+  },
+  "footer": {
+    "company": "EU Residency Pro",
+    "description": "Your trusted partner for EU residency permits",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "loading": "Loading...",
+    "submit": "Submit",
+    "close": "Close"
+  }
+}
