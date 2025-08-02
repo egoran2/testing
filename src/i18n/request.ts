@@ -12,20 +12,25 @@ export default getRequestConfig(async ({locale}) => {
   if (!actualLocale) {
     try {
       const headersList = await headers();
-      // Try different header names to get the pathname
-      const pathname = headersList.get('x-pathname') || 
-                      headersList.get('x-invoke-path') || 
-                      headersList.get('x-forwarded-path') || '';
-      console.log('request.ts - pathname from headers:', pathname);
+      // Get locale from middleware header
+      const localeFromHeader = headersList.get('x-locale');
+      const pathname = headersList.get('x-pathname') || '';
       
-      // Extract locale from URL path
-      const pathSegments = pathname.split('/').filter(Boolean);
-      const firstSegment = pathSegments[0];
+      console.log('request.ts - locale from header:', localeFromHeader);
+      console.log('request.ts - pathname from header:', pathname);
       
-      if (firstSegment && locales.includes(firstSegment)) {
-        actualLocale = firstSegment;
+      if (localeFromHeader && locales.includes(localeFromHeader)) {
+        actualLocale = localeFromHeader;
       } else {
-        actualLocale = 'en';
+        // Fallback: extract from pathname
+        const pathSegments = pathname.split('/').filter(Boolean);
+        const firstSegment = pathSegments[0];
+        
+        if (firstSegment && locales.includes(firstSegment)) {
+          actualLocale = firstSegment;
+        } else {
+          actualLocale = 'en';
+        }
       }
     } catch (error) {
       console.log('request.ts - error getting headers:', error);
