@@ -1,29 +1,41 @@
 
-import { useTranslations } from 'next-intl';
+import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
+import HeroSection from '@/components/HeroSection';
+import BenefitsSection from '@/components/BenefitsSection';
+import ProcessSection from '@/components/ProcessSection';
+import TrustSection from '@/components/TrustSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import QuizCTA from '@/components/QuizCTA';
+import { generateSEOMetadata } from '@/lib/seo';
 
 interface Props {
   params: Promise<{ locale: string }>;
 }
 
-export default async function HomePage({ params }: Props) {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  console.log('HomePage rendering for locale:', locale);
-
-  return (
-    <div className="p-8">
-      <h1 className="text-4xl font-bold text-blue-600">Test with Translations - {locale}</h1>
-      <TestComponent />
-    </div>
-  );
+  const t = await getTranslations({ locale, namespace: 'seo' });
+  
+  return generateSEOMetadata({
+    title: t('home.title'),
+    description: t('home.description'),
+    locale,
+    path: '/'
+  });
 }
 
-function TestComponent() {
-  const t = useTranslations('hero');
-  
+export default async function HomePage({ params }: Props) {
+  const { locale } = await params;
+
   return (
-    <div className="mt-4">
-      <h2 className="text-2xl font-semibold text-blue-800">{t('headline')}</h2>
-      <p className="text-gray-600">{t('subheadline')}</p>
-    </div>
+    <main className="min-h-screen">
+      <HeroSection />
+      <BenefitsSection />
+      <ProcessSection />
+      <TrustSection />
+      <TestimonialsSection />
+      <QuizCTA />
+    </main>
   );
 }
